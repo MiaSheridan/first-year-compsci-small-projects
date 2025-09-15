@@ -1,7 +1,6 @@
-#Assignment 2-ROCKET SIMULATION
+# 2-ROCKET SIMULATION
 
-# Name: Mia Valderrama-Lopez
-# Student ID: 261239153
+#Mia Valderrama-Lopez
 
 import math
 
