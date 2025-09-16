@@ -36,9 +36,6 @@ void del(person_t *p);
 void list(char type);
 void prettyprint(person_t *p);
 
-/******************************************************************************
- *************** You should not make changes above this comment ***************
- *****************************************************************************/
 
 int main(void) {
   int exitcode;
@@ -55,9 +52,7 @@ int main_menu(void) {
   printf("4. List a group\n");
   printf("Select an option: ");
 
-  // TODO: Implement the rest of this function.
-  // You **must** use scanf, a switch statement, and the *_menu
-  // helper functions.
+
   int choice;
 
 
@@ -99,8 +94,7 @@ int main_menu(void) {
 }
 
 void add_menu(void) {
-  // TODO: Add local variables and scanf calls to this function
-  // to complete it.
+  
   char type;
   char name[30];
   int age;
@@ -260,12 +254,12 @@ void del_menu(void) {
 }
 
 void del(person_t *p) {
-  // TODO: Implement this function.
+  
   p->type = '\0';  // Mark this person as deleted
 }
 
 void list_menu(void) {
-  // TODO: Add a scanf call and complete this function.
+  
   char type;
   printf("Enter the type: ");
   scanf(" %c", &type);
@@ -273,7 +267,7 @@ void list_menu(void) {
 }
 
 void list(char type) {
-  // TODO: Complete this function. You must use the prettyprint function.
+  
 
   for (int i = 0; i < 1000; i++) {
     if (people[i].type == '\0') {
@@ -286,9 +280,6 @@ void list(char type) {
 }
 
 void prettyprint(person_t *p) {
-  // TODO: Complete this function.
-  // You must match the output format shown
-  // in the description. 
 
 
 
