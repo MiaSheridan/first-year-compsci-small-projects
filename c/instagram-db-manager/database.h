@@ -1,9 +1,8 @@
 #ifndef DB_H
 #define DB_H
 
-//Programmer : Mia Valderrama-Lopez
-//Created (partially) : 4/04/25
-//Purpose: Just initializing fields and functions have right return type
+// Mia
+//Just initializing fields and functions have right return type
 
 #include <stddef.h> //saw it in the ppoints for size_t
 
