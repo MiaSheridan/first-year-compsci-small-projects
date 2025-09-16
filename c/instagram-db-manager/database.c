@@ -6,9 +6,8 @@
 #include <assert.h>  //saw this one on the slides(Mia)
 #define INITIAL_CAPACITY 4 //as specified 
 
-//Programmer: Beatriz Chu
-//Created   : 2025/04/04
-//Purpose   : parses a single line of CSV data into Record 
+//Sofia
+//parses a single line of CSV data into Record 
 
 Record parse_record(char const *line){
 	Record record = {0}; //initialiazed at 0
@@ -54,9 +53,9 @@ Record parse_record(char const *line){
 }
  
 
-//Programmer: Mia Valderrama-Lopez
-//Created: 4/04/2025
-//Purpose: Create empty database 
+//Mia
+
+//Create empty database 
 
 Database db_create(){
 
@@ -77,9 +76,8 @@ Database db_create(){
 
 }
 
-//Programmer: Mia Valderrama-Lopez
-//Created: 4/04/2025
-//Purpose: appends a record and resizes if needed
+//Mia 
+ //appends a record and resizes if needed
 
 void db_append(Database *db, Record const *item){
 
@@ -109,9 +107,8 @@ void db_append(Database *db, Record const *item){
 
 }
 
-//Programmer: Mia Valderrama-Lopez
-//Created: 4/04/2025
-//Purpose: returns a pointer to the item in the database at the given index
+//Mia 
+//returns a pointer to the item in the database at the given index
 
 Record *db_index(Database *db, int index) {
   int dbSize = (int) db->size;
@@ -123,9 +120,8 @@ Record *db_index(Database *db, int index) {
 }
 
 
-//Programmer: Mia Valderrama-Lopez
-//Created: 4/04/25
-//Purpose: Returns a pointer to the first item in the database whose handle field equals the given value.
+//Mia 
+// Returns a pointer to the first item in the database whose handle field equals the given value.
 
 //search by handle(case sensitive)
 
@@ -140,9 +136,8 @@ Record *db_lookup(Database *db, char const *handle) {
 }
 
 
-//Programmer: Mia Valderrama-Lopez
-//Created: 4/04/25 
-//Purpose: Releases the memory held by the underlying array. After calling this, the database can no longer be used.
+// Mia
+// Releases the memory held by the underlying array. After calling this, the database can no longer be used.
 
 void db_free(Database *db){
   if(db){
@@ -154,9 +149,9 @@ void db_free(Database *db){
 
 
 
-//Programmer: Beatriz Chu
-//Created   : 2025/04/04
-//Purpose   : appends the records read from the file at 'path into already initialized 
+//sof
+
+/ appends the records read from the file at 'path into already initialized 
 //            database 'db'
 
 void db_load_csv(Database *db, char const *path){
@@ -190,9 +185,8 @@ void db_load_csv(Database *db, char const *path){
 }
 
 
-//Programmer: Beatriz Chu
-//Created   : 2025/04/04
-//Purpose   : overwrite the file located at 'path' with the contents
+//sof
+//overwrite the file located at 'path' with the contents
 //	      of the database, represented in CSV format
 //
 
