@@ -1,5 +1,4 @@
-//Name: Mia Valderrama-Lopez
-// ID: 261239153
+
 
 #include <stdio.h>
 #include <stdlib.h>
