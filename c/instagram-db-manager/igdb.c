@@ -22,9 +22,8 @@ void finds(Database *db, char *input);
 
 void swaps(Database *db, char *input);
 
-//Programmer: Youcef Antar Antar
-//Created   : 2025/04/07
-//Purpose   : Handles inner recursive calls and command selection
+//youyou
+// Handles inner recursive calls and command selection
 
 int main_loop(Database *db)
 {
@@ -85,9 +84,8 @@ int main_loop(Database *db)
 }
 
 
-//Programmer: Youcef Antar Antar
-//Created   : 2025/04/07
-//Purpose   : Adds a new entry to the end of the database
+//youyou
+// Adds a new entry to the end of the database
 
 void adds(Database *db, char *input) {
     //Splitting up input array
@@ -151,9 +149,8 @@ void adds(Database *db, char *input) {
     modified = 1;//Keeping track of the state of the database
 }
 
-//Programmer: Youcef Antar Antar
-//Created   : 2025/04/08
-//Purpose   : Updates an existing entry for the given handle
+//youyou & mia
+//Updates an existing entry for the given handle
 
 void updates(Database *db, char *input) {
     //Splitting up input array
@@ -213,9 +210,8 @@ void updates(Database *db, char *input) {
 
 }
 
-//Programmer: Youcef Antar Antar
-//Created   : 2025/04/08
-//Purpose   : Prints out the whole database formatted as a table.
+//youyou
+// Prints out the whole database formatted as a table.
 
 void lists(Database *db){
     //Printing header
@@ -238,9 +234,8 @@ void lists(Database *db){
 	
     }
 }
-//Programmer: Youcef Antar Antar
-//Created   : 2025/04/08
-//Purpose   : Writes the database out to the csv database file
+//youyou
+// Writes the database out to the csv database file
 
 void saves(Database *db){
     //Writes the files
@@ -253,9 +248,8 @@ void saves(Database *db){
     printf("Wrote %lu records.\n", db->size);
 }
 
-//Programmer: Youcef Antar Antar
-//Created   : 2025/04/08
-//Purpose   : Writes the database out to the csv database in order of followers count
+//youyou & mia
+// Writes the database out to the csv database in order of followers count
 
 void sorts(Database *db){
     //Sorting the array
@@ -273,9 +267,8 @@ void sorts(Database *db){
     saves(db);
 }
 
-//Programmer: Taym Atrach
-//Created   : 2025/04/09
-//Purpose   : Finds a record in the database by handle 
+//Ptaym
+//Finds a record in the database by handle 
 
 void finds(Database *db, char *input) {
     // Duplicate input to avoid mutation
@@ -336,9 +329,8 @@ void finds(Database *db, char *input) {
 
 
 
-//Programmer: Taym Atrach
-//Created   : 2025/04/10
-//Purpose   : swaps positions of two records in database by their handle
+//Taym 
+//swaps positions of two records in database by their handle
 
 void swaps(Database *db, char *input) {
     char *copy = strdup(input);
@@ -408,9 +400,8 @@ void swaps(Database *db, char *input) {
 
 
 
-//Programmer: Youcef Antar Antar
-//Created   : 2025/04/06
-//Purpose   : Initially loads the database and starts the loop
+//youyou
+// Initially loads the database and starts the loop
 
 int main()
 {
