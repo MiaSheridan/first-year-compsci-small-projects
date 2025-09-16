@@ -1,6 +1,5 @@
 #!/bin/bash
-#Name: Mia Valderrama-Lopez
-#ID: 261239153
+
 
 # Function to run a test case
 run_test() {
