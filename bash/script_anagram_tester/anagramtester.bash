@@ -1,6 +1,6 @@
 #!/bin/bash
-#Name: Mia Valderrama-Lopez
-#Id: 261239153
+
+
 
 run_test(){
 
